@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="./assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" defer></script>
+  <style>
+    * {
+      direction: rtl;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .navbar {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .intro h1 {
+      font-size: 2.5rem;
+      color: #495057;
+    }
+
+    .intro p.lead {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-primary,
+    .btn-success {
+      border-radius: 25px;
+      padding: 0.75rem 1.5rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover,
+    .btn-success:hover {
+      transform: scale(1.05);
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .accordion-button {
+      font-size: 1.1rem;
+      color: #495057;
+    }
+
+    .modal-section p {
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .modal-content {
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-forms .form-control {
+      border-radius: 10px;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .custom-forms .form-control:focus {
+      box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+    }
+
+    .custom-tabs .nav-pills {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .offcanvas {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .offcanvas-header {
+      border-bottom: 1px solid #dee2e6;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">عنوان سایت</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door ms-2"></i>خانه</a>
+          <a class="nav-link" href="#"><i class="bi bi-window-dock ms-2"></i>امکانات</a>
+          <a class="nav-link" href="#"><i class="bi bi-book ms-2"></i>درباره ما</a>
+          <a class="nav-link disabled" aria-disabled="true ms-2">Disabled</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Intro Section -->
+  <div class="intro py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="text-right pt-5">
+            <h1 class="text-secondary mb-4">فروشگاه امیر نورمحمدی</h1>
+            <p class="lead">این فروشگاه برای تامین هاست است</p>
+            <a class="btn btn-primary btn-lg me-3" href="">دانلود اپلیکیشن</a>
+            <a class="btn btn-success btn-lg" href="">دانلود وب اپلیکیشن</a>
+          </div>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block">
+          <img class="img-fluid rounded shadow" src="Img/usb.jpg" alt="توضیحات تصویر">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Posts Section -->
+  <div class="posts py-5 bg-light">
+    <div class="container">
+      <h3 class="text-secondary mb-4">جدیدترین پست ها</h3>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card mb-4">
+            <img src="Img/abr.webp" class="card-img-top rounded-top" alt="عنوان پست">
+            <div class="card-body">
+              <h5 class="card-title">عنوان پست</h5>
+              <p class="card-text">این پست نمونه پروژه برای فروش هاست ابری هست</p>
+              <div class="d-flex justify-content-end">
+                <a href="#" class="btn btn-primary">مشاهده</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card mb-4">
+            <img src="Img/abr.webp" class="card-img-top rounded-top" alt="عنوان پست">
+            <div class="card-body">
+              <h5 class="card-title">عنوان پست</h5>
+              <p class="card-text">این پست نمونه پروژه برای فروش هاست ابری هست</p>
+              <div class="d-flex justify-content-end">
+                <a href="#" class="btn btn-primary">مشاهده</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card mb-4">
+            <img src="Img/abr.webp" class="card-img-top rounded-top" alt="عنوان پست">
+            <div class="card-body">
+              <h5 class="card-title">عنوان پست</h5>
+              <p class="card-text">این پست نمونه پروژه برای فروش هاست ابری هست</p>
+              <div class="d-flex justify-content-end">
+                <a href="#" class="btn btn-primary">مشاهده</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card mb-4">
+            <img src="Img/abr.webp" class="card-img-top rounded-top" alt="عنوان پست">
+            <div class="card-body">
+              <h5 class="card-title">عنوان پست</h5>
+              <p class="card-text">این پست نمونه پروژه برای فروش هاست ابری هست</p>
+              <div class="d-flex justify-content-end">
+                <a href="#" class="btn btn-primary">مشاهده</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Accordion Section -->
+  <div class="accordion py-5">
+    <div class="container">
+      <h3 class="text-secondary mb-2 pb-2 text-center">امکانات سایت</h3>
+      <p class="text-center text-secondary mb-4">توضیحات سایت فروش امیر</p>
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="img-fluid mb-4 rounded shadow" src="Img/support.svg" alt="پشتیبانی">
+        </div>
+        <div class="col-lg-6">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  عنوان اکاردیون
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  توضیحات اکاردیون
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Title Section -->
+  <div class="modal-section py-5">
+    <div class="container text-center">
+      <h4 class="">عنوان </h4>
+      <p class="text-secondary"> توضیحات برای سایت فروشگاه امیر نورمحمدی</p>
+      <p class="text-secondary">سرور ابری نسل جدیدی از سرورها است که منابع پرقدرت و پایدار را در اختیار کاربران قرار
+        می‌دهد. سرور مجازی ابری مجموعه‌ای از سرورهای ادغام شده است که به شما امکانات گسترده و کارایی بالا را
+        می‌دهد.</p>
+      <a class="btn btn-primary btn-lg mt-3" href="#">اطلاعات بیشتر</a>
+    </div>
+  </div>
+  <!-- Forms Section -->
+  <div class="custom-forms py-5">
+    <div class="container">
+      <h3 class="text-secondary mb-4 text-center">فرم‌های تماس</h3>
+      <form>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="نام">
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="ایمیل">
+          </div>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="پیام"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">ارسال</button>
+      </form>
+    </div>
+  </div>
+  <!-- Tabs Section -->
+  <div class="custom-tabs py-5 bg-light">
+    <div class="container">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab"
+            aria-controls="pills-home" aria-selected="true">خانه</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab"
+            aria-controls="pills-profile" aria-selected="false">پروفایل</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab"
+            aria-controls="pills-contact" aria-selected="false">تماس</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <p>محتوای تب خانه</p>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <p>محتوای تب پروفایل</p>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <p>محتوای تب تماس</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Offcanvas Section -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">عنوان اوفکانواس</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="بستن"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>محتوای اوفکانواس</p>
+      <p>توضیحات بیشتر درباره امکانات سایت و یا اطلاعات اضافی.</p>
+    </div>
+  </div>
+</body>
+
+</html>
